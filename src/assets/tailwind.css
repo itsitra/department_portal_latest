@@ -1,0 +1,16 @@
+@tailwind base;
+
+@tailwind components;
+
+@layer components {
+  .focusring {
+    @apply transition duration-500 ease-in-out focus:outline-none focus:border-transparent focus:ring-2 focus:ring-green-300 focus:ring-offset-1 focus:ring-offset-green-300;
+  }
+}
+
+@tailwind utilities;
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
